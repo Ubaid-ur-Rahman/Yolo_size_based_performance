@@ -1,2 +1,7 @@
-# Yolo_size_based_performance
-Test the YOLO model performance based on the size of object and Estimate the Distance of predicted object from camera. 
+# Evaluating YOLO Model Performance Based on Object Size and Estimating Object Distance from the Camera
+
+When a YOLO model is trained on a custom dataset, it generates and stores a variety of performance metrics, such as the confusion matrix, Precision-Recall curves, and F1 score graphs, typically located in the `runs/detect/` directory. These metrics provide valuable insights into the training and validation performance of the model. However, to gain a deeper understanding of how the model performs across different scenarios, additional analyses are required.
+
+This repository introduces a set of Python scripts designed to analyze the YOLO model's detection performance based on the size of detected objects. Specifically, we compute the distribution of detections by categorizing bounding box areas and assess the model's precision and accuracy across different object sizes within images. These metrics are visualized through histograms to better illustrate the model's strengths and weaknesses with respect to object scale.
+
+In addition to performance evaluation, we also explore methods for estimating the distance of detected objects from the camera. By incorporating extra information, such as camera parameters and object dimensions, these scripts attempt to approximate the distance between the camera and the detected objects, providing a more comprehensive evaluation of the model’s real-world applicability.
